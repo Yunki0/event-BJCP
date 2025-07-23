@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -8,12 +8,15 @@ body {
 header {
     background: #35424a;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 30px 0 20px 0;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 h1 {
     margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 2px;
 }
 
 .container {
@@ -41,4 +44,117 @@ h1 {
 
 .button:hover {
     background: #2c3e50;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+.event-list article {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(53,66,74,0.08);
+    padding: 2em 1.5em 1.5em 1.5em;
+    width: 320px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-top: 6px solid #35424a;
+}
+
+.event-list article:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(53,66,74,0.16);
+}
+
+.event-list h2 {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #35424a;
+}
+
+.event-list h3 {
+    font-size: 1.1em;
+    color: #0077cc;
+    margin-bottom: 0.7em;
+}
+
+.lieu {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.event-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.7em 0 0 0;
+}
+
+.event-list li {
+    margin-bottom: 0.4em;
+    font-size: 1em;
+}
+
+footer {
+    background: #35424a;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 10px 0;
+    margin-top: 40px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.event-img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.08);
+}
+
+/* Modale pour afficher l'image en grand */
+.img-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+.img-modal-content {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.3);
+    display: block;
+    margin: auto;
+}
+.close-modal {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .event-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+    .event-list article {
+        width: 90%;
+    }
 }
