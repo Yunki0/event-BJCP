@@ -1,10 +1,10 @@
 {
-  "name": "coding-website",
+  "name": "event-bjcp",
   "version": "1.0.0",
   "description": "A simple coding website with an integrated code editor.",
-  "main": "src/scripts/app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "live-server src",
+    "start": "node server.js",
     "build": "echo 'Build step not defined'",
     "test": "echo 'No tests defined'"
   },
@@ -16,12 +16,12 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/coding-website.git"
+    "url": "https://github.com/Yunki0/coding-website.git"
   },
   "homepage": "https://github.com/yourusername/coding-website#readme",
   "bugs": {
