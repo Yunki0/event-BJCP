@@ -111,6 +111,8 @@ h1 {
     position: relative;
     overflow: hidden;
     max-width: 100vw;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
 }
 
 .event-list article:hover {
@@ -141,11 +143,18 @@ h1 {
     list-style: none;
     padding-left: 0;
     margin: 0.7em 0 0 0;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
 }
 
 .event-list li {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.6em;
     font-size: 1em;
+}
+
+.event-list p {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 
 .event-list a {
