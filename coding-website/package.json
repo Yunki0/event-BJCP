@@ -1,0 +1,30 @@
+{
+  "name": "coding-website",
+  "version": "1.0.0",
+  "description": "A simple coding website with an integrated code editor.",
+  "main": "src/scripts/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "coding",
+    "editor",
+    "web"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/coding-website.git"
+  },
+  "homepage": "https://github.com/yourusername/coding-website#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/coding-website/issues"
+  }
+}
