@@ -1,52 +1,64 @@
-# Coding Website
+# Event - BJCP
 
-This project is a simple coding website that provides an interactive code editor for users to write and test their code snippets.
+Ce projet est un site statique de présentation de trois événements majeurs organisés par BJCP.
 
-## Project Structure
+## Structure du projet
 
 ```
 coding-website
 ├── src
-│   ├── index.html         # Main HTML document
-│   ├── styles             # Contains CSS files
-│   │   └── main.css       # Main stylesheet
-│   ├── scripts            # Contains JavaScript files
-│   │   └── app.js         # Main JavaScript file
-│   └── components         # Contains reusable components
-│       └── editor.js      # Code editor component
-├── package.json           # NPM configuration file
-├── .gitignore             # Files to ignore in version control
-└── README.md              # Project documentation
+│   ├── index.html         # Page principale présentant les événements
+│   ├── styles
+│   │   └── main.css       # Feuille de style principale
+│   ├── scripts
+│   │   └── app.js         # Script pour les interactions (ex: affichage des images en grand)
+├── Images                 # Dossier contenant les images des événements
+│   ├── journee sportive.png
+│   ├── soiree cine.png
+│   └── kermesse.png
+├── package.json           # Fichier de configuration npm (pour Render ou Express)
+├── server.js              # Serveur Express pour hébergement web service (optionnel)
+└── README.md              # Documentation du projet
 ```
 
-## Setup Instructions
+## Instructions d'installation
 
-1. Clone the repository:
+1. Clone le dépôt :
    ```
-   git clone https://github.com/yourusername/coding-website.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd coding-website
+   git clone https://github.com/yourusername/event-BJCP.git
    ```
 
-3. Install the dependencies:
+2. Va dans le dossier du projet :
+   ```
+   cd event-BJCP/coding-website
+   ```
+
+3. Installe les dépendances (si tu utilises l’option Web Service) :
    ```
    npm install
    ```
 
-4. Open `src/index.html` in your browser to view the website.
+4. Lance le serveur localement (optionnel, pour Web Service) :
+   ```
+   npm start
+   ```
 
-## Usage
+5. Ouvre `src/index.html` dans ton navigateur pour voir le site en local.
 
-- The website features a code editor where users can write and execute code snippets.
-- The editor is built using JavaScript and provides functionalities such as code highlighting and execution.
+## Déploiement sur Render
 
-## Contributing
+- Pour un **Static Site** : indique `src` comme dossier racine, laisse les commandes de build et start vides.
+- Pour un **Web Service** :  
+  - Build command : `npm install`  
+  - Start command : `npm start`  
+  - Root directory : `coding-website`
 
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+## Fonctionnalités
 
-## License
+- Présentation visuelle et détaillée de trois événements (Journée Sportive, Soirée Ciné, Grande Kermesse)
+- Affichage des images en grand lors d’un clic
+- Design responsive et moderne
 
-This project is licensed under the MIT License.
+## Licence
+
+Ce projet est sous licence
