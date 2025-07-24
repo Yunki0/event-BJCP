@@ -52,33 +52,6 @@ h1 {
     letter-spacing: 2px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.editor {
-    background: #ffffff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.button {
-    background: #35424a;
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.button:hover {
-    background: #2c3e50;
-}
-
 /* ARTICLES PAR ÉVÉNEMENT */
 .event-sportive {
     border-top: 6px solid #bfff00; /* Vert citron */
@@ -96,12 +69,12 @@ h1 {
 }
 
 .event-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2em;
     margin: 40px auto;
     max-width: 1100px;
+    justify-items: center;
 }
 
 .event-list article {
@@ -204,11 +177,44 @@ footer {
     box-shadow: 0 -2px 12px #ff5e6240;
 }
 
+.countdown {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff5e62;
+    background: #fffbe7;
+    padding: 0.5em 1em;
+    border-radius: 18px;
+    margin-bottom: 1em;
+    display: inline-block;
+    box-shadow: 0 2px 8px #ff5e6240;
+}
+
+.event-termine {
+    opacity: 0.7;
+    filter: grayscale(0.3);
+    background: repeating-linear-gradient(135deg, #eee 0px, #eee 20px, #f8d7da 40px, #eee 60px);
+    border-top: 6px solid #ff5e62 !important;
+    position: relative;
+    cursor: not-allowed;
+}
+.event-termine::after {
+    content: "Événement terminé";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff5e62;
+    color: #fff;
+    padding: 0.4em 1em;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 2px 8px #ff5e6240;
+    z-index: 2;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
     .event-list {
-        flex-direction: column;
-        align-items: center;
         gap: 1.5em;
         width: 100%;
     }
@@ -235,4 +241,87 @@ footer {
         border-top-right-radius: 18px;
         font-size: 0.95em;
     }
+}
+
+@media (max-width: 400px) {
+    .event-list article {
+        font-size: 0.95em;
+    }
+    .countdown {
+        font-size: 1em;
+        padding: 0.3em 0.6em;
+    }
+}
+
+/* Accessibilité */
+.event-list a:focus {
+    outline: 2px solid #ff5e62;
+    outline-offset: 2px;
+}
+
+#loader {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(120deg, #fffbe7 0%, #ffd6d6 100%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.7s, visibility 0.7s;
+    opacity: 1;
+    visibility: visible;
+}
+
+#loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.spinner-advanced {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ff5e62;
+    border-top: 6px solid #ffd600;
+    border-right: 6px solid #800000;
+    border-bottom: 6px solid #bfff00;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1.2em;
+    box-shadow: 0 2px 16px #ff5e6240;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loader-text span {
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff5e62;
+    animation: bounce 1.2s infinite;
+    animation-delay: calc(var(--i) * 0.08s);
+}
+
+.loader-text span:nth-child(n) {
+    --i: 0;
+}
+.loader-text span:nth-child(2) { --i: 1; }
+.loader-text span:nth-child(3) { --i: 2; }
+.loader-text span:nth-child(4) { --i: 3; }
+.loader-text span:nth-child(5) { --i: 4; }
+.loader-text span:nth-child(6) { --i: 5; }
+.loader-text span:nth-child(7) { --i: 6; }
+.loader-text span:nth-child(8) { --i: 7; }
+.loader-text span:nth-child(9) { --i: 8; }
+.loader-text span:nth-child(10) { --i: 9; }
+.loader-text span:nth-child(11) { --i: 10; }
+.loader-text span:nth-child(12) { --i: 11; }
+.loader-text span:nth-child(13) { --i: 12; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
 }
