@@ -78,18 +78,18 @@ h1 {
 
 /* ARTICLES PAR ÉVÉNEMENT */
 .event-sportive {
-    border-top: 6px solid #27ae60;
-    background: linear-gradient(135deg, #eafaf1 60%, #d4efdf 100%);
+    border-top: 6px solid #bfff00; /* Vert citron */
+    background: linear-gradient(135deg, #f6ffe3 60%, #eaffc1 100%);
 }
 
 .event-cine {
-    border-top: 6px solid #ff5e62;
-    background: linear-gradient(135deg, #fff6e3 60%, #ffe0e3 100%);
+    border-top: 6px solid #800000; /* Rouge bordeaux */
+    background: linear-gradient(135deg, #ffe3e3 60%, #ffd6d6 100%);
 }
 
 .event-kermesse {
-    border-top: 6px solid #8e44ad;
-    background: linear-gradient(135deg, #f5e6fa 60%, #e8daef 100%);
+    border-top: 6px solid #ffd600; /* Jaune soleil */
+    background: linear-gradient(135deg, #fffbe3 60%, #fff3b0 100%);
 }
 
 .event-list {
