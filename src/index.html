@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event - BJCP</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="src/Images/logo.jpeg">
+    <link rel="icon" href="Images/logo.jpeg">
+    <link rel="apple-touch-icon" href="Images/logo.jpeg">
 
     <!-- Balises Open Graph pour l’aperçu sur les réseaux sociaux -->
     <meta property="og:title" content="Les Événements Inoubliables du BJCP !" />
@@ -19,17 +21,12 @@
     <meta name="twitter:title" content="Les Événements Inoubliables du BJCP !" />
     <meta name="twitter:description" content="Viens découvrir nos 3 événements festifs : Journée Sportive, Soirée Ciné et Grande Kermesse au Terrain Golden !" />
     <meta name="twitter:image" content="https://ton-site.com/Images/journee%20sportive.png" />
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0Y9K4N2MQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-T0Y9K4N2MQ');
-    </script>
 </head>
 <body>
+    <div id="loader" role="status" aria-live="polite">
+        <div class="spinner-advanced"></div>
+        <span class="loader-text"><span>C</span><span>h</span><span>a</span><span>r</span><span>g</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>.</span><span>.</span><span>.</span></span>
+    </div>
     <header>
         <h1>🎉 Les Événements Inoubliables du BJCP ! 🎊</h1>
         <p style="color:#e67e22;font-size:1.1em;margin-top:0.5em;">Viens t’amuser, vibrer et partager des moments uniques avec nous !</p>
@@ -40,44 +37,47 @@
                 <img src="Images/journee sportive.jpg" alt="Journée Sportive" class="event-img">
                 <h2>🏃‍♂️⚽ Journée Sportive</h2>
                 <h3>Jeudi 07 août à partir 2025 de 08H<br><span class="lieu">📍 Terrain Golden</span></h3>
+                <div class="countdown" data-date="2025-08-07T08:00:00"></div>
                 <p>
-                    Venez bouger, vous challenger et vous amuser lors d'une journée sportive conviviale !<br>
-                    <ul>
-                        <li>🔹 Entraînement collectif</li>
-                        <li>🔹 Compétition de marathon</li>
-                        <li>🔹 Tournois : football, handball, basketball</li>
-                        <li>🔹 Collation & remise de prix</li>
-                        <li>🔹 <em>NB: Viens en tenue de sport, avec ta bouteille d’eau et ta bonne humeur !</em></li>
-                    </ul>
+                    Venez bouger, vous challenger et vous amuser lors d'une journée sportive conviviale !
                 </p>
+                <ul>
+                    <li>🔹 Entraînement collectif</li>
+                    <li>🔹 Compétition de marathon</li>
+                    <li>🔹 Tournois : football, handball, basketball</li>
+                    <li>🔹 Collation & remise de prix</li>
+                    <li>🔹 <strong>NB: Viens en tenue de sport, avec ta bouteille d’eau et ta bonne humeur !</strong></li>
+                </ul>
             </article>
             <article class="event-cine">
                 <img src="Images/soiree cine.jpg" alt="Soirée Ciné" class="event-img">
                 <h2>🎬🍿 Soirée Ciné</h2>
                 <h3>Vendredi 08 août 2025 à partir de 18H30<br><span class="lieu">📍 Terrain Golden</span></h3>
+                <div class="countdown" data-date="2025-08-08T18:30:00"></div>
                 <p>
-                    Profitez d'une soirée détente sous les étoiles avec :<br>
-                    <ul>
-                        <li>🔸 Projection cinéma plein air</li>
-                        <li>🔸 Popcorn & boissons offerts</li>
-                        <li>🔸 Convivialité et bonne ambiance garanties !</li>
-                        <li>🔸 <em>NB: Apporte ta natte ou ton petit coussin pour plus de confort !</em></li>
-                    </ul>
+                    Profitez d'une soirée détente sous les étoiles avec :
                 </p>
+                <ul>
+                    <li>🔸 Projection cinéma plein air</li>
+                    <li>🔸 Popcorn & boissons offerts</li>
+                    <li>🔸 Convivialité et bonne ambiance garanties !</li>
+                    <li>🔸 <strong>NB: Apporte ta natte ou ton petit coussin pour plus de confort !</strong></li>
+                </ul>
             </article>
             <article class="event-kermesse">
                 <img src="Images/kermesse.jpg" alt="La Grande Kermesse" class="event-img">
                 <h2>🎠🎉 La Grande Kermesse</h2>
                 <h3>Jeudi 15 août 2025 de 11H à 17H<br><span class="lieu">📍 Terrain Golden</span></h3>
+                <div class="countdown" data-date="2025-08-15T11:00:00"></div>
                 <p>
-                    Une journée “chill et fun” pour petits et grands :<br>
-                    <ul>
-                        <li>🔹 Jeux ludiques</li>
-                        <li>🔹 Remise des prix</li>
-                        <li>🔹 Show de clôture plein de surprises !</li>
-                        <li>🔹 <em>NB: Entrée libre – Viens avec tes amis, ta famille, et ton plus beau sourire !</em></li>
-                    </ul>
+                    Une journée “chill et fun” pour petits et grands :
                 </p>
+                <ul>
+                    <li>🔹 Jeux ludiques</li>
+                    <li>🔹 Remise des prix</li>
+                    <li>🔹 Show de clôture plein de surprises !</li>
+                    <li>🔹 <strong>NB: Entrée libre – Viens avec tes amis, ta famille, et ton plus beau sourire !</strong></li>
+                </ul>
             </article>
         </section>
     </main>
@@ -86,6 +86,15 @@
         <p><strong>Bureau des Jeunes des Cités A et B</strong></p>
         <p><strong>En collaboration</strong></p>
     </footer>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/countdown.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('loader');
+            loader.classList.add('hide');
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 800); // attend la transition
+        });
+    </script>
 </body>
 </html>
