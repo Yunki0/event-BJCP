@@ -68,6 +68,11 @@ h1 {
     background: linear-gradient(135deg, #fffbe3 60%, #fff3b0 100%);
 }
 
+.event-annees-60 {
+    border-top: 6px solid #ff5e62; /* Rouge vif */
+    background: linear-gradient(135deg, #ffe3e3 60%, #ffb3b3 100%);
+}
+
 .event-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
