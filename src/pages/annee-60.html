@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Défilé Années 60 - BJCP</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="Images/logo.jpeg">
+    <link rel="apple-touch-icon" href="Images/logo.jpeg">
+
+    <!-- Balises Open Graph pour l’aperçu sur les réseaux sociaux -->
+    <meta property="og:title" content="Défilé Années 60 - BJCP !" />
+    <meta property="og:description" content="Revivez le charme des années 60 !" />
+    <meta property="og:image" content="https://event-bjcp.onrender.com/Images/logo.jpeg" />
+    <meta property="og:url" content="https://event-bjcp.onrender.com/" />
+    <meta property="og:type" content="event" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0Y9K4N2MQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-T0Y9K4N2MQ');
+    </script>
+</head>
+<body>
+    <div id="loader" role="status" aria-live="polite">
+        <div class="spinner-advanced"></div>
+        <span class="loader-text"><span>C</span><span>h</span><span>a</span><span>r</span><span>g</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>.</span><span>.</span><span>.</span></span>
+    </div>
+    <header>
+        <h1>🎉 Les Événements Inoubliables du BJCP ! 🎊</h1>
+        <p style="color:#e67e22;font-size:1.1em;margin-top:0.5em;">Viens t’amuser, vibrer et partager des moments uniques avec nous !</p>
+    </header>
+    <main>
+        <section class="event-list">
+            <article class="event-annees-60">
+                <img src="Images/defile-annees-60.jpg" alt="défilé année 60" class="event-img">
+                <h2>🎠🎉 Défilé de Mode - Années 60</h2>
+                <h3>Jeudi 15 août 2025 de 11H à 17H<br><span class="lieu">📍 Terrain Golden</span></h3>
+                <div class="countdown" data-date="2025-08-15T11:00:00"></div>
+                <p>
+                    Plongez dans l'ambiance rétro et reviez le charme unique des sixties
+                </p>
+                <ul>
+                    <li>🔹 Défilé en solo ou en duo</li>
+                    <li>🔹 Présentation de tenues vintage</li>
+                    <li>🔹 Ambiance musicale et animations</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p><strong>&copy; 2025 - All Right Reserved</strong></p>
+        <p><strong>Bureau des Jeunes des Cités A et B</strong></p>
+        <p><strong>En collaboration</strong></p>
+    </footer>
+    <script src="scripts/countdown.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('loader');
+            loader.classList.add('hide');
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 900);
+        });
+    </script>
+</body>
+</html>
