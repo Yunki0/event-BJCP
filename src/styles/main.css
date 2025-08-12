@@ -96,12 +96,6 @@ h1 {
     letter-spacing: 0.02em;
 }
 
-.event-list article:hover {
-    transform: scale(1.04) rotate(-1deg);
-    box-shadow: 0 12px 32px rgba(255,94,98,0.18);
-    filter: brightness(1.07);
-}
-
 .event-list h2 {
     margin-top: 0.5em;
     font-size: 1.4em;
