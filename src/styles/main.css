@@ -137,26 +137,15 @@ h1 {
     margin-bottom: 1em;
     margin-top: 0.5em;
 }
-
 .event-list a {
     display: inline-block;
-    margin-top: 1em;
+    background: #ff5e62;
     color: #fff;
-    background: linear-gradient(90deg, #27ae60, #ff5e62, #8e44ad);
     padding: 0.6em 1.2em;
-    border-radius: 25px;
+    border-radius: 18px;
     text-decoration: none;
     font-weight: bold;
-    letter-spacing: 1px;
-    box-shadow: 0 2px 8px rgba(53,66,74,0.08);
-    transition: background 0.3s, transform 0.2s;
 }
-
-.event-list a:hover {
-    background: linear-gradient(90deg, #8e44ad, #ff5e62, #27ae60);
-    transform: scale(1.08);
-}
-
 /* IMAGES */
 .event-img {
     width: 100%;
