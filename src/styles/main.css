@@ -66,12 +66,39 @@ h1 {
 .event-kermesse {
     border-top: 6px solid #ffd600; /* Jaune soleil */
     background: linear-gradient(135deg, #fffbe3 60%, #fff3b0 100%);
+
+    .btn{
+        background-color: #e91e63; /* Rose vif */
+        color: #fff;
+        border: none;
+        padding: 0.8em 1.5em;
+        border-radius: 25px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 3px 3px #8b5e3c;
+    }
+    .btn:hover {
+        background-color: #c2185b; /* Rose foncé */
+        transform: scale(1.05);
+    }
 }
 
 .event-annees-60 {
-    border-top: 6px solid #ff5e62; /* Rouge vif */
-    background: linear-gradient(135deg, #ffe3e3 60%, #ffb3b3 100%);
-}
+    background: linear-gradient(135deg, #ff6f00, #ffc300);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 18px;
+    font-family: 'Poppins', sans-serif;
+
+    .event-annees-60 h2 {
+        font-family: 'Pacifico', sans-serif;
+        font-size: 2.5em;
+        color: #00B8D4;
+        text-shadow: 2px 2px #8b5e3c;
+    }
+} 
 
 .event-list {
     display: grid;
