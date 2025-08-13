@@ -73,6 +73,11 @@ h1 {
     background: linear-gradient(135deg, #fffbe7 60%, #ffe3e3 100%);
 }
 
+.event-chasse {
+    border-top: 6px solid #b4ffa5; /* Vert d'eau */
+    background: linear-gradient(135deg, #fffbe7 60%, #ffe3a3 100%);
+}
+
 .event-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
